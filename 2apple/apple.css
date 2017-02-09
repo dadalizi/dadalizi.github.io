@@ -1,0 +1,458 @@
+body ul p h1 h2 h3 input{
+    margin: 0;padding: 0;
+
+}
+*{
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+}
+img{
+    border: none;
+}
+.container{
+    width: 100%;height: auto;
+    padding: 1px;
+
+}
+.container:after{
+    content:"";
+    display: block;
+    clear: both;
+}
+.container .list{
+    float: left;
+    width: 25%;height: 200px;
+    background-position: center;
+
+}
+.container .list:nth-child(1){
+
+    background-image:url(images/l1.jpg) ;
+
+    border-right:1px solid #fff;
+
+}
+.container .list:nth-child(2){
+    background-image:url(images/l2.jpg) ;
+    border-right:1px solid #fff;
+}
+.container .list:nth-child(3){
+    background-image:url(images/l3.jpg) ;
+    border-right:1px solid #fff;
+}
+.container .list:nth-child(4){
+    background-image:url(images/l4.jpg) ;
+
+}
+@media screen and (max-width:1068px){
+    .container .list{
+        float: left;
+        width: 50%;height: 200px;
+        background-position: center;
+
+    }
+    .container .list:nth-child(1){
+
+        background-image:url(images/m1.jpg) ;
+
+        border-right:1px solid #fff;
+    }
+    .container .list:nth-child(2){
+        background-image:url(images/m2.jpg) ;
+        border-right:1px solid #fff;
+    }
+    .container .list:nth-child(3){
+        background-image:url(images/m3.jpg) ;
+        border-right:1px solid #fff;
+
+
+
+    }
+    .container .list:nth-child(4){
+        background-image:url(images/m4.jpg) ;
+
+    }
+}
+
+
+@media screen and (max-width:735px) {
+    .container .list{
+        float: left;
+        width: 100%;height: 200px;
+        background-position: center;
+        margin-bottom: 5px;
+    }
+    .container .list:nth-child(1){
+
+        background-image:url(images/x1.jpg) ;
+        background-size: 736px 200px;
+        background-repeat: no-repeat;
+    }
+    .container .list:nth-child(2){
+        background-image:url(images/x2.jpg) ;
+        background-size: 736px 200px;
+        background-repeat: no-repeat;
+    }
+    .container .list:nth-child(3){
+        background-image:url(images/x3.jpg) ;
+        background-size: 736px 200px;
+        background-repeat: no-repeat;
+    }
+    .container .list:nth-child(4){
+        background-image:url(images/x4.jpg) ;
+        background-size: 736px 200px;
+        background-repeat: no-repeat;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+/*标题*/
+
+.nav{
+    width: 100%;height: 45px;
+    background: #313131;
+    margin:0 auto;
+    -moz-user-select:none;
+    cursor: default;
+}
+.nav-inner{
+    width: 1000px;height:44px;
+    /*background: yellow;*/
+    margin:0 auto;
+    text-align: justify;
+}
+.nav-inner:after{
+    content:"";
+    display: inline-block;
+    width: 100%;
+}
+
+@font-face {
+    font-family: 'iconfont';  /* project id 223270 */
+    src: url('//at.alicdn.com/t/font_bci2mbqyd1ltmx6r.eot');
+    src: url('//at.alicdn.com/t/font_bci2mbqyd1ltmx6r.eot?#iefix') format('embedded-opentype'),
+    url('//at.alicdn.com/t/font_bci2mbqyd1ltmx6r.woff') format('woff'),
+    url('//at.alicdn.com/t/font_bci2mbqyd1ltmx6r.ttf') format('truetype'),
+    url('//at.alicdn.com/t/font_bci2mbqyd1ltmx6r.svg#iconfont') format('svg');
+}
+
+@font-face {
+    font-family: 'iconfont';  /* project id 223367 */
+    src: url('//at.alicdn.com/t/font_lqcyfcceoeis5rk9.eot');
+    src: url('//at.alicdn.com/t/font_lqcyfcceoeis5rk9.eot?#iefix') format('embedded-opentype'),
+    url('//at.alicdn.com/t/font_lqcyfcceoeis5rk9.woff') format('woff'),
+    url('//at.alicdn.com/t/font_lqcyfcceoeis5rk9.ttf') format('truetype'),
+    url('//at.alicdn.com/t/font_lqcyfcceoeis5rk9.svg#iconfont') format('svg');
+}
+
+@font-face {
+    font-family: 'iconfont';  /* project id 223370 */
+    src: url('//at.alicdn.com/t/font_4e69cme83ojyk3xr.eot');
+    src: url('//at.alicdn.com/t/font_4e69cme83ojyk3xr.eot?#iefix') format('embedded-opentype'),
+    url('//at.alicdn.com/t/font_4e69cme83ojyk3xr.woff') format('woff'),
+    url('//at.alicdn.com/t/font_4e69cme83ojyk3xr.ttf') format('truetype'),
+    url('//at.alicdn.com/t/font_4e69cme83ojyk3xr.svg#iconfont') format('svg');
+}
+@font-face {
+    font-family: 'iconfont';  /* project id 223270 */
+    src: url('//at.alicdn.com/t/font_0vbyq7vbvr221emi.eot');
+    src: url('//at.alicdn.com/t/font_0vbyq7vbvr221emi.eot?#iefix') format('embedded-opentype'),
+    url('//at.alicdn.com/t/font_0vbyq7vbvr221emi.woff') format('woff'),
+    url('//at.alicdn.com/t/font_0vbyq7vbvr221emi.ttf') format('truetype'),
+    url('//at.alicdn.com/t/font_0vbyq7vbvr221emi.svg#iconfont') format('svg');
+}
+
+.icon{
+    font-family: 'iconfont';
+    line-height: 50px;
+}
+
+.show-s{
+    display: none;
+}
+
+
+#open{
+    color: #fff;
+    cursor: pointer;
+    display: none;
+}
+
+
+.mac{
+    height:44px;
+    line-height: 44px;
+    color: #fff;
+    display: inline-block;
+}
+
+.mac a{
+    color: #fff;
+    transition: all 0.5s;
+    font-size: 14px;
+}
+
+
+.mac a:hover{
+    color: #969696;
+}
+
+
+
+
+@media screen and (max-width:1068px) {
+    .nav-inner{
+        width: 100%;
+        padding: 0 20px;
+    }
+}
+
+
+
+@media screen and (max-width:735px) {
+    .hidden-s{
+        display: none;
+      }
+     .show-s{
+         display: inline-block;
+         transition: all 0.5s;
+       }
+    .show-s:hover{
+        color:#999;
+       }
+    #open{
+        display:inline-block;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*banner*/
+
+
+.banner-container{
+    width:100%;height:520px;
+}
+.banner-box{
+    width:100%;height:100%;
+}
+.banner-list{
+    width:100%;height:100%;
+}
+.banner-list a{
+    display:block;
+    width:100%;height:100%;
+    position: relative;
+}
+.banner-title h1{
+    width:100%;height:24px;
+    background: url(images/title.png) center no-repeat;
+    position:absolute;
+    top:28px;
+}
+.banner-title h2{
+    color:#000;
+    text-align:center;
+    padding-top:70px;
+    font-size:35px;
+}
+.banner-images{
+    width:100%;height:432px;
+    background:url(images/banner1-l.jpg);
+    background-size:auto 115%;
+    background-position:top;
+    position:absolute;
+    left:0;top:20%;
+}
+
+
+
+
+@media screen and (max-width:1068px){
+    .banner-container{
+        height:467px;
+    }
+    .banner-images{
+        height:360px;
+        background:url(images/banner1-m.jpg);
+        background-size:auto 100%;
+        background-position:center;
+        position:absolute;
+        left:0;top:25%;
+    }
+}
+@media screen and (max-width:735px){
+    .banner-container{
+        height:480px;
+    }
+    .banner-images{
+        height:360px;
+        background:url(images/banner1-s.jpg);
+        background-size:auto 120%;
+        background-position:center top;
+        position:absolute;
+        left:0;top:25%;
+    }
+}
+
+
+
+
+
+
+
+
+/*底部*/
+.footer{
+    width: 100%;height:auto;
+    background: #f2f2f2;
+    margin: 0 auto;
+
+}
+.footer-inner{
+    width: 980px;height: auto;
+    margin: 0 auto;
+    /*background: blue;*/
+}
+
+.list-tow{
+    width:20%;height:260px;
+    color: #666;
+    /*background: red;*/
+    font-size: 12px;
+    float: left;
+
+}
+
+.list-tow ul{
+    list-style: none;
+}
+
+.list-one{
+
+    margin-bottom: 10px;
+    color: #333;
+    font-size: 12px;
+    font-weight: bolder;
+
+}
+
+
+
+.list-tow ul li  a{
+    color: #666;
+    font-size: 12px;
+    display: block;
+
+}
+.list-tow ul li  a:hover{
+    color: #404040;
+    text-decoration: underline;
+}
+
+
+
+
+
+
+
+@media screen and (max-width:1068px) {
+    .footer-inner{
+        width: 100%;
+    }
+
+}
+
+@media screen and (max-width:735px) {
+    .list-tow{
+        width: 100%;height: auto;
+    }
+    .list-tow li a{
+        height: 0;
+        overflow: hidden;
+    }
+    .list-one{
+        border-bottom:1px solid #E3E3E3;
+    }
+    span{
+        display: block;
+        float: right;
+        color: #000;
+    }
+    .show-s{
+        color: #000;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+/*备案*/
+.beian-box{
+    width:100%;height:auto;
+    background:#f2f2f2;
+}
+.beian{
+    margin: 0 auto;
+    padding-top: 250px;
+    margin-left: 10%;
+}
+.beian-1{
+
+    color: #999;
+    font-size: 12px;
+
+}
+.beian-1 a{
+    color: #0070c9;
+    display: inline-block;
+}
+
+.beian-1 a:hover{
+    text-decoration:underline;
+}
+
+
+
+
+
+
+.beian-2{
+    color: #999;
+    font-size: 12px;
+
+}
+.beian-2 a{
+    color: #0070c9;
+}
+
+.beian-2 a:hover{
+    text-decoration:underline;
+}
