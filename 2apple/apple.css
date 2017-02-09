@@ -337,7 +337,7 @@ img{
 }
 
 .list-tow{
-    width:20%;height:260px;
+    width:20%;height:250px;
     color: #666;
     /*background: red;*/
     font-size: 12px;
@@ -418,17 +418,21 @@ img{
 .beian-box{
     width:100%;height:auto;
     background:#f2f2f2;
+    padding-top:20px;
 }
 .beian{
     margin: 0 auto;
     padding-top: 250px;
     margin-left: 10%;
 }
-.beian-1{
+/*!*.beian-1{*/
 
+    /*color: #999;*/
+    /*font-size: 12px;*/
+
+.beian-1{
     color: #999;
     font-size: 12px;
-
 }
 .beian-1 a{
     color: #0070c9;
